@@ -1,0 +1,18 @@
+cc_import(
+    name = "openvdb-x86_64-linux",
+    shared_library = "lib/x86_64/linux/libopenvdb.so.10.0",
+)
+
+cc_library(
+    name = "openvdb",
+    hdrs = glob(
+        [
+            "include/openvdb/**",
+        ],
+    ),
+    strip_include_prefix = "include",
+    visibility = ["//visibility:public"],
+    deps = select({
+        "@bazel_tools//src/conditions:linux_x86_64": [":openvdb-x86_64-linux"],
+    }),
+)
