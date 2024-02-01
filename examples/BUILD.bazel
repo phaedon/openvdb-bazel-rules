@@ -3,6 +3,5 @@ cc_binary(
     srcs = ["helloworld.cpp"],
     deps = [
         "//:openvdb",
-        "@oneTBB//:tbb",
     ],
 )

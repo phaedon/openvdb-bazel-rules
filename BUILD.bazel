@@ -13,6 +13,9 @@ cc_library(
     strip_include_prefix = "include",
     visibility = ["//visibility:public"],
     deps = select({
-        "@bazel_tools//src/conditions:linux_x86_64": [":openvdb-x86_64-linux"],
+        "@bazel_tools//src/conditions:linux_x86_64": [
+            ":openvdb-x86_64-linux",
+            "@onetbb//:tbb",
+        ],
     }),
 )
