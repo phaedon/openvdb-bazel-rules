@@ -1,5 +1,5 @@
 // Copyright Contributors to the OpenVDB Project
-// SPDX-License-Identifier: MPL-2.0
+// SPDX-License-Identifier: Apache-2.0
 
 /// @file points/AttributeSet.h
 ///
@@ -15,6 +15,7 @@
 #include <openvdb/MetaMap.h>
 
 #include <limits>
+#include <climits>
 #include <memory>
 #include <vector>
 

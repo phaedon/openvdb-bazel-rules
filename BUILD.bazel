@@ -1,6 +1,6 @@
 cc_import(
     name = "openvdb-x86_64-linux",
-    shared_library = "lib/x86_64/linux/libopenvdb.so.10.0",
+    shared_library = "lib/x86_64/linux/libopenvdb.so.11.0",
 )
 
 cc_library(
