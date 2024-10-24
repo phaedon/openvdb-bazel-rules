@@ -15,6 +15,8 @@ cc_library(
     deps = select({
         "@bazel_tools//src/conditions:linux_x86_64": [
             ":openvdb-x86_64-linux",
+            "@boost.any",
+            "@boost.numeric_conversion",
             "@onetbb//:tbb",
         ],
     }),
